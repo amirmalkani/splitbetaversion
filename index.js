@@ -151,12 +151,15 @@ btn.addEventListener('click', () => {
         console.log(i);
     }
     noOfPeople.style.display = 'none';
-    splitContainerMain.style.display = 'block';
+    splitContainerMain.style.display = 'flex';
     let html = '';
     for (let i = 0; i < valueForPeople.value; i++) {
 
-        html+=`<div id="styling" class="d-flex w-100 border border-primary my-3"><h4 class="align-self-start px-2">Enter name ${i + 1} :</h4> <input type="text" id="id${i + 1}" class="form-control mx-3 mb-2 align-self-start flex1" placeholder="Enter the Name ${i+1}" aria-label="Username"
-        aria-describedby="basic-addon1"> <h4 class="align-self-start px-2">Enter the Expense :</h4> <input type="number" id="i${i + 1}" class="form-control mx-3 mb-2 align-self-start flex1" placeholder="Enter the Amount for Name ${i + 1}" aria-label="Username"
+        // html+=`<div id="styling" class="d-flex w-100 border border-primary my-3"><h4 class="align-self-start px-2">Enter name ${i + 1} :</h4> <input type="text" id="id${i + 1}" class="form-control mx-3 mb-2 align-self-start flex1" placeholder="Enter the Name ${i+1}" aria-label="Username"
+        // aria-describedby="basic-addon1"> <h4 class="align-self-start px-2">Enter the Expense :</h4> <input type="number" id="i${i + 1}" class="form-control mx-3 mb-2 align-self-start flex1" placeholder="Enter the Amount for Name ${i + 1}" aria-label="Username"
+        // aria-describedby="basic-addon1"></div>`;
+        html+=`<div id="styling" class="w-100"><h4 >Enter name ${i + 1} :</h4> <input type="text" id="id${i + 1}" class="form-control" placeholder="Enter the Name ${i+1}" aria-label="Username"
+        aria-describedby="basic-addon1"> <h4>Enter the Expense :</h4> <input type="number" id="i${i + 1}" class="form-control" placeholder="Enter the Amount for Name ${i + 1}" aria-label="Username"
         aria-describedby="basic-addon1"></div>`;
     }
     html += `<div><Button class="btn btn-primary my-3" type="submit" id="btn1">Enter</Button></div>`
