@@ -60,17 +60,18 @@
 
     <div class="d-flex flex-column justify-content-center m-auto h-100">
 
-        <div class="container noOfPeople w-50 flex flex-column justify-content-center align-items-center" id="noOfPeople">
+        <div class="container noOfPeople flex flex-column justify-content-center align-items-center" id="noOfPeople">
             <h1 class="">Enter the Number of People</h1>
-            <input type="number" id="valueForPeople" class="form-control w-50" placeholder="Enter the No of Person"
+            <input type="number" id="valueForPeople" class="form-control" placeholder="Enter the No of Person"
                 aria-label="Username" aria-describedby="basic-addon1" required>
             <br>
-            <Button id="btn" class="btn btn-primary w-25">Enter</Button>
+            <Button id="btn" class="btn btn-primary">Enter</Button>
         </div>
-        <div class="splitContainerMain my-3 noOfPeople flex flex-column justify-content-center "
+
+        <div class="splitContainerMain my-3 container noOfPeople flex flex-column justify-content-center align-items-center"
             id="splitContainerMain" style="display: none;">
             <h3 id="headerSplit">Please Enter the Name and Expense</h3>
-            <div class="splitContainer d-flex flex-column align-items-center  border border-primary" id="splitContainer">
+            <div class="splitContainer w-100 d-flex flex-column align-items-center" id="splitContainer">
 
             </div>
         </div>
